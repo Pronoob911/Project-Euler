@@ -2,7 +2,7 @@
 
 	function checkPrime(a)
 	{
-		for(var i=2;i<(a/2);i++)
+		for(var i=2;i<=Math.floor(Math.sqrt(a));i++)
 		{
       		if(a%i==0)
       		{
@@ -18,7 +18,7 @@
 
 
 	var flag=0, prime, n=2;
-	while(flag<=10001)
+	while(flag<10001)
 	{
 		if(checkPrime(n)==1)
 		{
