@@ -1,16 +1,14 @@
 
 //first method is more optimal
 	
-	lcm(20);
-	function lcm(number)
-	{
-		var a=1;
-		for(var i=1;i<=number;i++)
-		{
-			a=(a*i)/(gcd(a,i));
-		}
-		console.log(a);
-	}
+	
+var a=1;
+for(var i=1;i<=20;i++)
+{
+	a=(a*i)/(gcd(a,i));
+}
+console.log(a);
+
 
 	function gcd(b,c)
 	{
